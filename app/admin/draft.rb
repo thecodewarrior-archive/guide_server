@@ -1,4 +1,5 @@
 ActiveAdmin.register Draft do
+  permit_params :title, :change_reason
 
 
   # See permitted parameters documentation:

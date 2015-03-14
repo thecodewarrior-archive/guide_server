@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guide_content_id: 
+  title: MyString
+  description: MyText
+  aspect_ratio: 9.99
+
+two:
+  guide_content_id: 
+  title: MyString
+  description: MyText
+  aspect_ratio: 9.99

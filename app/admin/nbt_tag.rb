@@ -1,4 +1,5 @@
 ActiveAdmin.register NbtTag do
+  permit_params :id, :type, :value
 
 
   # See permitted parameters documentation:

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mod_name: MyString
+  modid: MyString
+  id_map_id: 
+
+two:
+  mod_name: MyString
+  modid: MyString
+  id_map_id: 

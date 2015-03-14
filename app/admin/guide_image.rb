@@ -1,4 +1,5 @@
 ActiveAdmin.register GuideImage do
+  permit_params :aspect_ratio, :title, :description
 
 
   # See permitted parameters documentation:

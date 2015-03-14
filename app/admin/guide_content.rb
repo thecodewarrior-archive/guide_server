@@ -1,4 +1,5 @@
 ActiveAdmin.register GuideContent do
+  permit_params :title, :image, :content
 
 
   # See permitted parameters documentation:

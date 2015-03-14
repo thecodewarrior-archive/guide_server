@@ -1,4 +1,5 @@
 ActiveAdmin.register Identifier do
+  permit_params :name, :modid
 
 
   # See permitted parameters documentation:

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  modid: MyString
+  guide_content_id: 
+  image_revision_id: 
+  image_requirement_id: 
+  guide_requirement_id: 
+
+two:
+  name: MyString
+  modid: MyString
+  guide_content_id: 
+  image_revision_id: 
+  image_requirement_id: 
+  guide_requirement_id: 

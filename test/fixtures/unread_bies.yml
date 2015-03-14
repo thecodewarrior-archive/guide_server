@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guide_id: 
+  draft_id: 
+  guide_image_id: 
+  submission_id: 
+
+two:
+  guide_id: 
+  draft_id: 
+  guide_image_id: 
+  submission_id: 

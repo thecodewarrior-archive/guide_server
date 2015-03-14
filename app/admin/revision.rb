@@ -1,4 +1,5 @@
 ActiveAdmin.register Revision do
+  permit_params :number, :notes, :changes, :reason
 
 
   # See permitted parameters documentation:

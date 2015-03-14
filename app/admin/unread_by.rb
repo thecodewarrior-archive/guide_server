@@ -1,4 +1,5 @@
 ActiveAdmin.register UnreadBy do
+  permit_params 
 
 
   # See permitted parameters documentation:

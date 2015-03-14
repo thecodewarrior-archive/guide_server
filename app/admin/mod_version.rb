@@ -1,4 +1,5 @@
 ActiveAdmin.register ModVersion do
+  permit_params :version_name, :version
 
 
   # See permitted parameters documentation:

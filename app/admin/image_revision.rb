@@ -1,4 +1,5 @@
 ActiveAdmin.register ImageRevision do
+  permit_params :number, :file_path, :notes, :changes, :reason
 
 
   # See permitted parameters documentation:

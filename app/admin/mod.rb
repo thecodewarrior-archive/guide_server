@@ -1,4 +1,5 @@
 ActiveAdmin.register Mod do
+  permit_params :mod_name, :modid
 
 
   # See permitted parameters documentation:

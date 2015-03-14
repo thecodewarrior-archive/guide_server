@@ -1,4 +1,5 @@
 ActiveAdmin.register IdMap do
+  permit_params :id, :meta, :type
 
 
   # See permitted parameters documentation:

@@ -1,4 +1,5 @@
 ActiveAdmin.register ImageRequirement do
+  permit_params :title, :description, :aspect_ratio
 
 
   # See permitted parameters documentation:

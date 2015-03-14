@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  guide_image_id: 
+  number: 1
+  file_path: MyString
+  notes: MyText
+  changes: MyText
+  reason: MyString
+
+two:
+  guide_image_id: 
+  number: 1
+  file_path: MyString
+  notes: MyText
+  changes: MyText
+  reason: MyString

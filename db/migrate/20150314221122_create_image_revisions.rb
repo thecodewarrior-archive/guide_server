@@ -7,7 +7,8 @@ class CreateImageRevisions < ActiveRecord::Migration
       t.text :notes
       t.text :changes
       t.string :reason
-
+      t.boolean :keep_permanently
+      
       t.timestamps
     end
   end

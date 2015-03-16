@@ -8,7 +8,8 @@ class CreateRevisions < ActiveRecord::Migration
       t.text :changes
       t.string :reason
       t.references :submission, index: true
-
+      t.boolean :keep_permanently
+      
       t.timestamps
     end
   end

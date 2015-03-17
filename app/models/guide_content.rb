@@ -4,4 +4,8 @@ class GuideContent < ActiveRecord::Base
   has_many :image_requirements
   has_many :guide_requirements
   has_many :id_maps
+  
+  def display_name
+    return self.identifier.display_name
+  end
 end

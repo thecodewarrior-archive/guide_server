@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'mod/:modid/:version/guides', :to => "guide#all", :as => :show_mod_guides
+
+  get 'guide/show/:id'
+
+  get 'guide/revisions'
+
   get 'landings/index'
 
   devise_for :users, controllers: {registrations: "users/registrations", sessions: "users/sessions", passwords: "users/passwords"}, skip: [:sessions, :registrations]

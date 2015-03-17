@@ -215,7 +215,7 @@ ActiveAdmin.setup do |config|
   #     admin.download_links = proc { can?(:view_download_links) }
   #
   #   end
-
+    
   # == Pagination
   #
   # Pagination is enabled by default for all resources.

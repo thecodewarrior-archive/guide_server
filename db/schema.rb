@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150314221208) do
+ActiveRecord::Schema.define(version: 20150317153013) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -53,6 +53,14 @@ ActiveRecord::Schema.define(version: 20150314221208) do
     t.datetime "updated_at"
   end
 
+  create_table "drafts_mod_versions", force: true do |t|
+    t.integer "mod_version_id"
+    t.integer "draft_id"
+  end
+
+  add_index "drafts_mod_versions", ["draft_id"], name: "index_drafts_mod_versions_on_draft_id"
+  add_index "drafts_mod_versions", ["mod_version_id"], name: "index_drafts_mod_versions_on_mod_version_id"
+
   create_table "guide_contents", force: true do |t|
     t.integer  "revision_id"
     t.string   "title"
@@ -72,6 +80,14 @@ ActiveRecord::Schema.define(version: 20150314221208) do
     t.datetime "updated_at"
   end
 
+  create_table "guide_images_mod_versions", force: true do |t|
+    t.integer "mod_version_id"
+    t.integer "guide_image_id"
+  end
+
+  add_index "guide_images_mod_versions", ["guide_image_id"], name: "index_guide_images_mod_versions_on_guide_image_id"
+  add_index "guide_images_mod_versions", ["mod_version_id"], name: "index_guide_images_mod_versions_on_mod_version_id"
+
   create_table "guide_requirements", force: true do |t|
     t.integer  "guide_content_id"
     t.string   "title"
@@ -82,11 +98,27 @@ ActiveRecord::Schema.define(version: 20150314221208) do
 
   add_index "guide_requirements", ["guide_content_id"], name: "index_guide_requirements_on_guide_content_id"
 
+  create_table "guide_requirements_mod_versions", force: true do |t|
+    t.integer "mod_version_id"
+    t.integer "guide_requirement_id"
+  end
+
+  add_index "guide_requirements_mod_versions", ["guide_requirement_id"], name: "index_guide_requirements_mod_versions_on_guide_requirement_id"
+  add_index "guide_requirements_mod_versions", ["mod_version_id"], name: "index_guide_requirements_mod_versions_on_mod_version_id"
+
   create_table "guides", force: true do |t|
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "guides_mod_versions", force: true do |t|
+    t.integer "mod_version_id"
+    t.integer "guide_id"
+  end
+
+  add_index "guides_mod_versions", ["guide_id"], name: "index_guides_mod_versions_on_guide_id"
+  add_index "guides_mod_versions", ["mod_version_id"], name: "index_guides_mod_versions_on_mod_version_id"
 
   create_table "id_maps", force: true do |t|
     t.integer  "guide_content_id"
@@ -125,6 +157,14 @@ ActiveRecord::Schema.define(version: 20150314221208) do
   end
 
   add_index "image_requirements", ["guide_content_id"], name: "index_image_requirements_on_guide_content_id"
+
+  create_table "image_requirements_mod_versions", force: true do |t|
+    t.integer "mod_version_id"
+    t.integer "image_requirement_id"
+  end
+
+  add_index "image_requirements_mod_versions", ["image_requirement_id"], name: "index_image_requirements_mod_versions_on_image_requirement_id"
+  add_index "image_requirements_mod_versions", ["mod_version_id"], name: "index_image_requirements_mod_versions_on_mod_version_id"
 
   create_table "image_revisions", force: true do |t|
     t.integer  "guide_image_id"

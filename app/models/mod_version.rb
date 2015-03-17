@@ -1,8 +1,12 @@
 class ModVersion < ActiveRecord::Base
-  belongs_to :guide
-  belongs_to :draft
-  belongs_to :guide_image
+  has_and_belongs_to_many :guides
+  has_and_belongs_to_many :drafts
+  has_and_belongs_to_many :guide_images
+  has_and_belongs_to_many :image_requirements
+  has_and_belongs_to_many :guide_requirements
   belongs_to :mod
-  belongs_to :image_requirement
-  belongs_to :guide_requirement
+  
+  def display_name
+    return (self.mod.nil? ? "XXX" : self.mod.display_name) + " - " + self.version_name
+  end
 end
